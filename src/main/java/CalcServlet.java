@@ -24,7 +24,6 @@ public class CalcServlet extends HttpServlet {
             resp.setStatus(status);
         } catch (IOException e) {
             e.printStackTrace();
-
         }
     }
 
@@ -47,7 +46,6 @@ public class CalcServlet extends HttpServlet {
             } catch (Exception ge) {
                 result = "Internal server error;500";
             }
-
             return result;
         }
 
@@ -70,8 +68,6 @@ public class CalcServlet extends HttpServlet {
                 default:
                     throw new IllegalArgumentException("No operation type found!");
             }
-
-
         }
 
         private int doCore(final int x, final int y, final BiFunction<Integer, Integer, Integer> f)

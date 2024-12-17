@@ -16,7 +16,5 @@ public class ServletApp {
 
         server.start();
         server.join();
-
-
     }
 }

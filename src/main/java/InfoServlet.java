@@ -12,9 +12,5 @@ public class InfoServlet extends HttpServlet {
         String msg = String.format("Hello %s", name != null ? name : "World");
 
         resp.getWriter().print(msg);
-
-
     }
-
-
 }
