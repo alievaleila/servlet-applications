@@ -56,7 +56,7 @@ public class CalcServlet extends HttpServlet {
         private int doParse(final int x, final int y, final String op) throws IllegalArgumentException {
             switch (op.toLowerCase()) {
                 case "sum":
-                    return doCore(x, y, (a, b) -> (a + b));
+                    return doCore(x, y, Integer::sum);
                 case "sub":
                     return doCore(x, y, (a, b) -> (a - b));
                 case "mul":
