@@ -1,4 +1,3 @@
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,7 +18,7 @@ public class InfoServlet extends HttpServlet {
         resp.getWriter().print(msg);
     }
     @Override
-    protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws ServletException,IOException{
+    protected void doPost(HttpServletRequest req,HttpServletResponse resp)throws IOException{
         resp.getWriter().print("I took");
     }
 }
